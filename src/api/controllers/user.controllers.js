@@ -273,7 +273,7 @@ const login = async (req, res, next) => {
       return res.status(404).json(UserErrors.FAIL_LOGIN_EMAIL); //User not found/mail not found
     }
   } catch (error) {
-    return next(error);
+    return next(error)
   }
 };
 
